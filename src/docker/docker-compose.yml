@@ -1,0 +1,11 @@
+version: '2'
+services:
+  casa-inteligente-app:
+    image: casa-inteligente:latest
+    container_name: casainteligente
+    hostname: localhost
+    ports:
+      - "8001:8080"
+    volumes:
+      - /home/CIT/jluiz/git-ees/api-casa-inteligente/:/volume
+
